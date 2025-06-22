@@ -9,3 +9,22 @@ public class Laptop {
         System.out.println("Compiled on Laptop");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

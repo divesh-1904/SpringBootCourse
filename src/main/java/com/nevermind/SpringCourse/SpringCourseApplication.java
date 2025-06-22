@@ -11,8 +11,6 @@ public class SpringCourseApplication {
 
 		ApplicationContext context = SpringApplication.run(SpringCourseApplication.class, args);
 		Dev dev = context.getBean(Dev.class);
-		dev.setContext(context);
 		dev.build();
 	}
-
 }
