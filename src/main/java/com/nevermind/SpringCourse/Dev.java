@@ -1,5 +1,6 @@
 package com.nevermind.SpringCourse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -9,7 +10,8 @@ public class Dev {
 
     Computer comp;
 
-    public Dev (Computer comp) {
+    @Autowired
+    public Dev (@Qualifier("laptop") Computer comp) {
         this.comp = comp; // Constructor Injection
     }
 
